@@ -1,0 +1,14 @@
+{
+  "name": "Kotlin Android Development",
+  "image": "mcr.microsoft.com/vscode/devcontainers/java:11",
+  "postCreateCommand": "sdkmanager --install 'system-images;android-29;google_apis;x86_64' && sdkmanager --install 'platform-tools' 'platforms;android-29' 'build-tools;29.0.3' && sdkmanager --install 'ndk-bundle'",
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "esbenp.prettier-vscode",
+    "google.android-emulator",
+    "kotlin.kotlin-language"
+  ],
+  "settings": {
+    "java.home": "/usr/local/sdkman/candidates/java/current"
+  }
+}
